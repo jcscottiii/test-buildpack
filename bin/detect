@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ -f $1/ckan.ini ]; then
+  echo "CKAN config found"
+  exit 0
+else
+  echo "no ckan file"
+  exit 1
+fi
